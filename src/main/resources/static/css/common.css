@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0px;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.pd10 {padding: 10px;}
+
+
+/*
+* 이메일 수신 버튼 전용
+*
+*/
+
+.wrapper { position: relative; }
+#switch {
+    position: absolute;
+    /* hidden */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.switch_label {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: 58px;
+    height: 28px;
+    background: #fff;
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+.switch_label:hover {
+    background: #efefef;
+}
+.onf_btn {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border-radius: 20px;
+    background: lightblue;
+    transition: 0.2s;
+}
+
+/* checking style */
+#switch:checked+.switch_label {
+    background: lightblue;
+    border: 2px solid lightblue;
+}
+
+#switch:checked+.switch_label:hover {
+    background: lightskyblue;
+}
+
+/* move */
+#switch:checked+.switch_label .onf_btn {
+    left: 33px;
+    background: #fff;
+    box-shadow: 1px 2px 3px #00000020;
+}
+
+/*
+* 이메일 수신 버튼 전용
+*
+*/
+

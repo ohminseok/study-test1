@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.studytest1.user.mapper.UserMapper">
+
+    <resultMap type="com.study.studytest1.user.vo.UserVo" id="UserMap">
+        <result property="userId" column="user_id" />
+        <result property="userPw" column="user_pw" />
+        <result property="userNm" column="user_name" />
+        <result property="userNickname" column="user_nickname" />
+        <result property="userMail" column="user_mail" />
+        <result property="userRole" column="user_role" />
+        <result property="regDate" column="reg_date" />
+        <result property="modiDate" column="modi_date" />
+    </resultMap>
+
+    <sql id="userColumns">
+        user_id ,
+        user_pw ,
+        user_name ,
+        user_nickname ,
+        uesr_mail ,
+        user_role ,
+        reg_date ,
+        modi_date
+    </sql>
+
+    <insert id="insertUser" parameterType="userVo"  useGeneratedKeys="true" keyProperty="userNum">
+        INSERT INTO tb_user (
+                                       user_id, user_pw
+                                     , user_nm, user_nickname, user_mail, user_role
+
+                            )
+        VALUES (
+                   #{userId}, #{userPw}
+                 , #{userNm}, #{userNickname}, #{userMail} , #{userRole}
+
+               )
+    </insert>
+
+</mapper>

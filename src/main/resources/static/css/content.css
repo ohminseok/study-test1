@@ -1,0 +1,286 @@
+.header {
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    /*padding: 10px;*/
+}
+
+.header > .header-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header > .header-container > .header-icon-box {
+    min-width: 34px;
+    display: inline-flex;
+    padding: 13px 0px 0px 0px;
+}
+
+.container {
+    /*height: 100%;*/
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.content.sign-up {
+    margin-top:5rem;
+    padding: 0px 24px 64px 24px;
+    box-sizing: border-box;
+}
+
+.sign-up-box {
+    display: grid;
+    grid-template-rows: 52px 62px 50px 50px 32px 400px 90px 60px 50px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    background-color: white;
+}
+
+.sign-up-box > .sign-up-box-img-box {
+    width: 150px;
+    max-height: 48px;
+}
+
+.sign-up-box > .sign-up-box-img-box > a > img {
+    width: 100%;
+    height: 45px;
+}
+
+.sign-up-box > .sign-up-welcome-box {
+    width:100%;
+    text-align: center;
+}
+
+.sign-up-box > .sign-up-welcome-box > h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.sign-up-box > .sign-up-welcome-sub-box {
+    width: 100%;
+    text-align: center;
+}
+
+.sign-up-box > .sign-up-welcome-sub-box > p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+
+}
+
+.sign-up-welcome-sns-box {
+    width:100%;
+    height:100%;
+}
+
+.sign-up-welcome-sns-box > .sign-up-welcome-sns-box-label-box {
+    width:100%;
+}
+
+.sign-up-welcome-sns-box > .sign-up-welcome-sns-box-label-box > label {
+    line-height: 1.5;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.sign-up-welcome-sns-box > .sign-up-welcome-sns-box-many-box {
+    width: 100%;
+    display: grid;
+}
+
+.sign-up-welcome-sns-box > .sign-up-welcome-sns-box-many-box > .google-icon {
+    width: 120px;
+    height: 28px;
+    background: url(../icon/btn_google_signin_light_focus_web.png) no-repeat;
+    background-size: 120px;
+    cursor: pointer;
+}
+
+.sign-up-information-message-box {
+    width: 100%;
+    text-align: center;
+}
+
+.sign-up-information-message-box > span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.sign-up-form-box {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: repeat(auto-fit,20px 60px);
+}
+
+.sign-up-form-box > .sign-up-form-label-box > label {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.sign-up-form-box  > .sign-up-form-input-box > input {
+    width: 100%;
+    height: 37px;
+}
+
+.sign-up-email-reception-box {
+    width: 100%;
+}
+
+.sign-up-email-reception-box > .sign-up-email-reception-check-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign-up-email-reception-box > .sign-up-email-reception-check-box > span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.sign-up-email-reception-box > .sign-up-email-reception-message-box > p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    font-size: 11px;
+    margin-top: 15px;
+}
+
+.sign-up-button-box {
+    width: 100%;
+}
+
+.sign-up-button-box > button {
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: cornflowerblue;
+    color: #FFFFFF;
+}
+
+.sign-up-already-login-message > p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.sign-up-already-login-message > p > a {
+    color: dodgerblue;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+}
+
+@media ( min-width: 320px ) {
+    .header > .header-container > .header-img-box {
+        width: 90px;
+    }
+
+    .header > .header-container > .header-nav-box {
+        display: none;
+    }
+
+    .header > .header-container > .header-nav-box > .header-nav-box-login-box > button:first-child {
+        width: 100px;
+        height: 40px;
+        background-color: white;
+        border-radius: 8px;
+        border: 1px solid #525252;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: rgb(17 24 39);
+        font-weight: 400;
+        opacity: 0.5;
+    }
+
+    .header > .header-container > .header-nav-box > .header-nav-box-login-box > button {
+        width: 100px;
+        height: 40px;
+        border-radius: 30px;
+        border: none;
+        font-family: 'Noto Sans KR', sans-serif;
+        background-color: cornflowerblue;
+        color: #FFFFFF;
+    }
+
+    .header > .header-container > .header-img-box > a > img {
+        width: 90px;
+        height: 45px;
+    }
+
+    .header > .header-container > .header-icon-box > .burger-icon {
+        width: 25px;
+        height: 25px;
+        background: url(../icon/free-icon-font-menu-burger.png) no-repeat;
+        background-size: 25px;
+        margin-left: 10px;
+    }
+
+
+
+}
+
+
+@media ( min-width: 768px ) {
+    .header > .header-container > .header-img-box {
+        width: calc(100% - 90%);
+    }
+    .header > .header-container > .header-img-box a img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header > .header-container > .header-nav-box {
+        width: 100%;
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 15px;
+    }
+
+    .header > .header-container > .header-icon-box {
+        display: none;
+    }
+}
+@media ( min-width: 1024px ) {
+    .header > .header-container {
+        max-width:1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header > .header-container > .header-img-box {
+        width: 112px;
+    }
+
+    .header > .header-container > .header-img-box a img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header > .header-container > .header-nav-box {
+        width: 944px;
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 15px;
+    }
+}
